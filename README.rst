@@ -22,6 +22,8 @@ Then run the following commands to bootstrap your environment.
 
     git clone https://github.com/anonfunc/ptdeckbuilder
     cd ptdeckbuilder
+    virtualenv env
+    source env/bin/activate
     pip install -r requirements/dev.txt
     python manage.py db init
     python manage.py db migrate
